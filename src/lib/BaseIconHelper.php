@@ -1,6 +1,6 @@
 <?php
 
-namespace common\components\iconhelper\lib;
+namespace macgyer\yii2icon\lib;
 
 use macgyer\yii2icon\fontawesome\helpers\FontawesomeIconHelper;
 use Yii;

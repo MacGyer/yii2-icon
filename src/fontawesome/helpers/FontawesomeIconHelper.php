@@ -2,9 +2,9 @@
 
 namespace macgyer\yii2icon\fontawesome\helpers;
 
-use common\components\iconhelper\lib\BaseIconHelper;
-use common\components\iconhelper\lib\IconHelperInterface;
 use macgyer\yii2icon\fontawesome\assets\FontawesomeAsset;
+use macgyer\yii2icon\lib\BaseIconHelper;
+use macgyer\yii2icon\lib\IconHelperInterface;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\web\View;
