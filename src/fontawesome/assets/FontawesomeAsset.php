@@ -6,6 +6,6 @@ use yii\web\AssetBundle;
 
 class FontawesomeAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/macgyer/yii2-icon/fontawesome/dist';
+    public $sourcePath = '@vendor/macgyer/yii2-icon/src/fontawesome/dist';
     public $js = ['fontawesome-all.js'];
 }
