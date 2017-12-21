@@ -1,4 +1,9 @@
 <?php
+/**
+ * @link https://github.com/MacGyer/yii2-icon
+ * @copyright Copyright (c) 2017 ... MacGyer for pluspunkt coding
+ * @license https://github.com/MacGyer/yii2-icon/blob/master/LICENSE
+ */
 
 namespace macgyer\yii2icon\fontawesome\helpers;
 
@@ -9,6 +14,13 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\web\View;
 
+/**
+ * Class FontawesomeIconHelper
+ *
+ *
+ * @author Christoph Erdmann
+ * @package helpers
+ */
 class FontawesomeIconHelper extends BaseIconHelper implements IconHelperInterface
 {
     const TYPE_REGULAR = 'r';

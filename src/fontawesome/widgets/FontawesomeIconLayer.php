@@ -1,4 +1,9 @@
 <?php
+/**
+ * @link https://github.com/MacGyer/yii2-icon
+ * @copyright Copyright (c) 2017 ... MacGyer for pluspunkt coding
+ * @license https://github.com/MacGyer/yii2-icon/blob/master/LICENSE
+ */
 
 namespace macgyer\yii2icon\fontawesome\widgets;
 
@@ -7,6 +12,12 @@ use yii\base\Widget;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
+/**
+ * Class FontawesomeIconLayer
+ *
+ * @author Christoph Erdmann
+ * @package widgets
+ */
 class FontawesomeIconLayer extends Widget
 {
     const ITEM_TYPE_ICON = 'icon';
