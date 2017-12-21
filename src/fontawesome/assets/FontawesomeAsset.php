@@ -25,5 +25,5 @@ class FontawesomeAsset extends AssetBundle
     /**
      * @var array list of JS files that this bundle contains.
      */
-    public $js = ['fontawesome-all-.js'];
+    public $js = ['fontawesome-all.js'];
 }
