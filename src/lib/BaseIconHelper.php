@@ -18,8 +18,10 @@ class BaseIconHelper
     }
 
     /**
-     * @param $name
-     * @param array $config
+     * Get the current instance for manipulation.
+     *
+     * @param string $name the icon name
+     * @param array $config the object configuration
      * @return FontawesomeIconHelper|Object
      */
     public static function getInstance($name, $config = [])
@@ -33,6 +35,13 @@ class BaseIconHelper
         return $instance;
     }
 
+    /**
+     * The magic to create an instance from the virtual method name.
+     *
+     * @param string $name the method name
+     * @param mixed $arguments the method arguments
+     * @return FontawesomeIconHelper|Object
+     */
     public static function __callStatic($name, $arguments)
     {
         if (!(strpos($name, 'fa') === 0)) {

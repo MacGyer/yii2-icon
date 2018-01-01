@@ -816,16 +816,19 @@ class FontawesomeIconHelper extends BaseIconHelper implements IconHelperInterfac
      * Sets the [[type]] of the icon to 'regular'.
      */
     const TYPE_REGULAR = 'r';
+
     /**
      * Sets the [[type]] of the icon to 'solid'.
      */
     const TYPE_SOLID = 's';
+
     /**
      * Sets the [[type]] of the icon to 'light'.
      *
      * Please note: this is only available in the Pro version
      */
     const TYPE_LIGHT = 'l';
+
     /**
      * Sets the [[type]] of the icon to 'brands'.
      */
@@ -835,10 +838,12 @@ class FontawesomeIconHelper extends BaseIconHelper implements IconHelperInterfac
      * Sets the [[size]] of the icon to the 'xs'.
      */
     const SIZE_XS = 'xs';
+
     /**
      * Sets the [[size]] of the icon to the 'sm'.
      */
     const SIZE_SM = 'sm';
+
     /**
      * Sets the [[size]] of the icon to the 'lg'.
      */
@@ -848,72 +853,182 @@ class FontawesomeIconHelper extends BaseIconHelper implements IconHelperInterfac
      * Sets the [[pull]] of the icon to the 'left'.
      */
     const PULL_LEFT = 'left';
+
     /**
      * Sets the [[pull]] of the icon to the 'right'.
      */
     const PULL_RIGHT = 'right';
 
     /**
-     * Sets the [[animation]] of the icon to the 'pulse'.
+     * Sets the [[animate]] of the icon to the 'pulse'.
      */
     const ANIMATE_PULSE = 'pulse';
+
     /**
-     * Sets the [[animation]] of the icon to the 'spin'.
+     * Sets the [[animate]] of the icon to the 'spin'.
      */
     const ANIMATE_SPIN = 'spin';
 
+    /**
+     * @var string the name of the icon without the prefix.
+     */
     public $name;
+
+    /**
+     * @var string the type of the icon, i. e. the prefix like "fas" or "far".
+     * Defaults to 's' = 'solid'.
+     *
+     * Please note: the 'light' type is only available in the pro version.
+     */
     public $type = self::TYPE_SOLID;
+
+    /**
+     * @var string|integer the size of the icon.
+     * The following options are available:
+     * - xs
+     * - sm
+     * - lg
+     * - a number from 2 through 10
+     */
     public $size;
+
+    /**
+     * @var boolean whether the icon has a fixed width.
+     */
     public $hasFixedWidth;
+
+    /**
+     * @var string the pull option for the icon, either 'left' or 'right'.
+     */
     public $pull;
+
+    /**
+     * @var boolean whether the icon has a border.
+     */
     public $hasBorder;
-    public $animation;
+
+    /**
+     * @var string the animation type, can be either 'pulse' or 'spin'.
+     */
+    public $animate;
+
+    /**
+     * @var boolean whether to flip the icon horizontally.
+     */
     public $flipHorizontal;
+
+    /**
+     * @var boolean whether to flip the icon vertically.
+     */
     public $flipVertical;
-    public $rotation;
+
+    /**
+     * @var float the rotation angle of the icon.
+     * Negative values are possible.
+     */
+    public $rotate;
+
+    /**
+     * @var float how far to move the icon right.
+     */
     public $right;
+
+    /**
+     * @var float how far to move the icon left.
+     */
     public $left;
+
+    /**
+     * @var float how far to move the icon down.
+     */
     public $down;
+
+    /**
+     * @var float how far to move the icon up.
+     */
     public $up;
+
+    /**
+     * @var float the growing factor of the icon.
+     */
     public $grow;
+
+    /**
+     * @var float the shrinking factor of the icon.
+     */
     public $shrink;
 
     /**
      * @var FontawesomeIconHelper
      */
     public $mask;
+
+    /**
+     * @var
+     */
     public $inverse;
 
+    /**
+     * Registers the required asset files.
+     *
+     * @param View $view the view object
+     */
     public static function registerAssets(View $view)
     {
         FontawesomeAsset::register($view);
     }
 
+    /**
+     * Sets the [[type]] to 'solid'.
+     * @return $this the current instance the current instance
+     */
     public function solid()
     {
         $this->type = self::TYPE_SOLID;
         return $this;
     }
 
+    /**
+     * Sets the [[type]] to 'light'.
+     *
+     * This is only available in the pro version.
+     *
+     * @return $this the current instance the current instance
+     */
     public function light()
     {
         $this->type = self::TYPE_LIGHT;
         return $this;
     }
 
+    /**
+     * Sets the [[type]] to 'brand'.
+     * @return $this the current instance the current instance
+     */
     public function brand()
     {
         $this->type = self::TYPE_BRAND;
         return $this;
     }
 
+    /**
+     * Sets the [[type]] to 'regular'.
+     * @return $this the current instance the current instance
+     */
     public function regular()
     {
         $this->type = self::TYPE_REGULAR;
         return $this;
     }
 
+    /**
+     * Sets the [[size]].
+     *
+     * See property docs for possible values.
+     *
+     * @param string|integer $size the size value
+     * @return $this the current instance the current instance
+     */
     public function size($size)
     {
         if (ctype_digit($size) || is_int($size)) {
@@ -925,108 +1040,206 @@ class FontawesomeIconHelper extends BaseIconHelper implements IconHelperInterfac
         return $this;
     }
 
+    /**
+     * Sets the fixed width option.
+     *
+     * @return $this the current instance the current instance
+     */
     public function fixedWidth()
     {
         $this->hasFixedWidth = true;
         return $this;
     }
 
+    /**
+     * Sets the [[pull]] to 'left'.
+     *
+     * @return $this the current instance
+     */
     public function pullLeft()
     {
         $this->pull = self::PULL_LEFT;
         return $this;
     }
 
+    /**
+     * Sets the [[pull]] to 'right'.
+     *
+     * @return $this the current instance
+     */
     public function pullRight()
     {
         $this->pull = self::PULL_RIGHT;
         return $this;
     }
 
+    /**
+     * Sets the border option.
+     *
+     * @return $this the current instance
+     */
     public function border()
     {
         $this->hasBorder = true;
         return $this;
     }
 
+    /**
+     * Sets the [[animate]] property to 'pulse'.
+     *
+     * @return $this the current instance
+     */
     public function pulse()
     {
-        $this->animation = self::ANIMATE_PULSE;
+        $this->animate = self::ANIMATE_PULSE;
         return $this;
     }
 
+    /**
+     * Sets the [[animate]] property to 'spin'.
+     *
+     * @return $this the current instance
+     */
     public function spin()
     {
-        $this->animation = self::ANIMATE_SPIN;
+        $this->animate = self::ANIMATE_SPIN;
         return $this;
     }
 
+    /**
+     * Sets the [[shrink]] property.
+     *
+     * @param float $factor the shrinking factor
+     * @return $this the current instance
+     */
     public function shrink($factor)
     {
         $this->shrink = $factor;
         return $this;
     }
 
+    /**
+     * Sets the [[grow]] property.
+     *
+     * @param float $factor the growing factor
+     * @return $this the current instance
+     */
     public function grow($factor)
     {
         $this->grow = $factor;
         return $this;
     }
 
+    /**
+     * Sets the [[up]] property for icon moving.
+     *
+     * @param float $factor the value of how far to move the icon
+     * @return $this the current instance
+     */
     public function up($factor)
     {
         $this->up = $factor;
         return $this;
     }
 
+    /**
+     * Sets the [[down]] property for icon moving.
+     *
+     * @param float $factor the value of how far to move the icon
+     * @return $this the current instance
+     */
     public function down($factor)
     {
         $this->down = $factor;
         return $this;
     }
 
+    /**
+     * Sets the [[left]] property for icon moving.
+     *
+     * @param float $factor the value of how far to move the icon
+     * @return $this the current instance
+     */
     public function left($factor)
     {
         $this->left = $factor;
         return $this;
     }
 
+    /**
+     * Sets the [[right]] property for icon moving.
+     *
+     * @param float $factor the value of how far to move the icon
+     * @return $this the current instance
+     */
     public function right($factor)
     {
         $this->right = $factor;
         return $this;
     }
 
+    /**
+     * Sets the [[rotate]] property.
+     *
+     * @param float $angle the rotation angle, negative values are possible
+     * @return $this the current instance
+     */
     public function rotate($angle)
     {
-        $this->rotation = $angle;
+        $this->rotate = $angle;
         return $this;
     }
 
+    /**
+     * Flips the icon vertically.
+     *
+     * @return $this the current instance
+     */
     public function flipVertical()
     {
         $this->flipVertical = true;
         return $this;
     }
 
+    /**
+     * Flips the icon horizontally.
+     *
+     * @return $this the current instance
+     */
     public function flipHorizontal()
     {
         $this->flipHorizontal = true;
         return $this;
     }
 
+    /**
+     * Inverts the icon.
+     *
+     * @return $this the current instance
+     */
     public function inverse()
     {
         $this->inverse = true;
         return $this;
     }
 
+    /**
+     * Masks the icon with the instance.
+     *
+     * @param FontawesomeIconHelper $instance the masking instance
+     * @return $this the current instance
+     */
     public function mask(FontawesomeIconHelper $instance)
     {
         $this->mask = $instance;
         return $this;
     }
 
+    /**
+     * Renders the icon tag.
+     *
+     * @return string the rendered markup
+     */
     public function render()
     {
         foreach ($this->getCssClasses() as $key => $cssClass) {
@@ -1049,6 +1262,11 @@ class FontawesomeIconHelper extends BaseIconHelper implements IconHelperInterfac
         return Html::tag($this->tag, '', $this->options);
     }
 
+    /**
+     * Get the CSS classes from the configuration options.
+     *
+     * @return array the CSS classes
+     */
     public function getCssClasses()
     {
         $cssClasses = [
@@ -1072,8 +1290,8 @@ class FontawesomeIconHelper extends BaseIconHelper implements IconHelperInterfac
             $cssClasses['fa-pull'] = "fa-pull{$this->pull}";
         }
 
-        if ($this->animation) {
-            $cssClasses['fa-animate'] = "fa-{$this->animation}";
+        if ($this->animate) {
+            $cssClasses['fa-animate'] = "fa-{$this->animate}";
         }
 
         if ($this->inverse) {
@@ -1083,6 +1301,11 @@ class FontawesomeIconHelper extends BaseIconHelper implements IconHelperInterfac
         return $cssClasses;
     }
 
+    /**
+     * Get the transformation options.
+     *
+     * @return array the transformations
+     */
     public function getTransformations()
     {
         $transformations = [];
@@ -1111,8 +1334,8 @@ class FontawesomeIconHelper extends BaseIconHelper implements IconHelperInterfac
             $transformations[] = "right-{$this->right}";
         }
 
-        if ($this->rotation) {
-            $transformations[] = "rotate-{$this->rotation}";
+        if ($this->rotate) {
+            $transformations[] = "rotate-{$this->rotate}";
         }
 
         if ($this->flipHorizontal) {
