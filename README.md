@@ -18,4 +18,10 @@ To install the package add the following to the ```require``` section of your co
 ```
 
 ## Usage
-tbd
+Please check sources for examples and details. Usage documentation will be coming shortly.
+
+## Changelog
+
+### 1.0.0 - 2018-01-02
+* initial release
+* FA5 version: 5.0.2
