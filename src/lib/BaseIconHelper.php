@@ -9,7 +9,16 @@ use yii\base\UnknownMethodException;
 
 class BaseIconHelper
 {
+    /**
+     * @var string the tag name for the icon
+     */
     public $tag = 'span';
+
+    /**
+     * @var array the HTML attributes for the icon tag.
+     * @see [yii\helpers\BaseHtml::renderTagAttributes()](http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#renderTagAttributes()-detail)
+     * for details on how attributes are being rendered.
+     */
     public $options = [];
 
     public function render()

@@ -15,7 +15,13 @@ use yii\helpers\Html;
 use yii\web\View;
 
 /**
- * Class FontawesomeIconHelper
+ * This class provides a fluent set of methods to render any Fontawesome 5 icon.
+ *
+ * For the free version, virtual methods are listed below. Via the `name` parameter of the `getInstance()` method, every
+ * FA5 icon can be rendered. Please note, that you need a valid FA 5 pro license and asset files (JS, CSS) to use all pro
+ * features.
+ *
+ * Current FA 5 version reflected: 5.0.2
  *
  * @method static FontawesomeIconHelper fa500px()
  * @method static FontawesomeIconHelper faAccessibleIcon()
