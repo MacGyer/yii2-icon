@@ -31,6 +31,6 @@
         }
     },
     "archive": {
-        "exclude": ["/bin"]
+        "exclude": ["bin"]
     }
 }
