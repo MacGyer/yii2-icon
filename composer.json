@@ -29,5 +29,8 @@
         "psr-4": {
             "macgyer\\yii2icon\\": "src"
         }
+    },
+    "archive": {
+        "exclude": ["/bin"]
     }
 }
