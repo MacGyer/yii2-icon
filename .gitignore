@@ -17,3 +17,6 @@ Thumbs.db
 
 # Yii2 Test system
 /yii
+
+# Helpers
+/bin
