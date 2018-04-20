@@ -25,6 +25,9 @@ Please check sources for examples and details. Usage documentation will be comin
 ### 1.0.2 - 2018-04-20
 * updated to FA5 version 5.0.10
 
+### 1.0.1 - 2018-03-03
+* updated to FA5 version 5.0.8
+
 ### 1.0.0 - 2018-01-02
 * initial release
 * FA5 version: 5.0.2
