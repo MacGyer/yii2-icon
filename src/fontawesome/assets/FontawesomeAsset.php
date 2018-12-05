@@ -20,10 +20,10 @@ class FontawesomeAsset extends AssetBundle
     /**
      * @var string the directory that contains the source asset files for this asset bundle.
      */
-    public $sourcePath = '@vendor/macgyer/yii2-icon/src/fontawesome/dist';
+    public $sourcePath = '@npm/fortawesome--fontawesome-free/js';
 
     /**
      * @var array list of JS files that this bundle contains.
      */
-    public $js = ['fontawesome-all.js'];
+    public $js = ['all.js'];
 }

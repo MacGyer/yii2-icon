@@ -7,6 +7,10 @@ use Yii;
 use yii\base\NotSupportedException;
 use yii\base\UnknownMethodException;
 
+/**
+ * Class BaseIconHelper
+ * @package macgyer\yii2icon\lib
+ */
 class BaseIconHelper
 {
     /**
@@ -32,6 +36,7 @@ class BaseIconHelper
      * @param string $name the icon name
      * @param array $config the object configuration
      * @return FontawesomeIconHelper|Object
+     * @throws \yii\base\InvalidConfigException
      */
     public static function getInstance($name, $config = [])
     {
@@ -50,6 +55,7 @@ class BaseIconHelper
      * @param string $name the method name
      * @param mixed $arguments the method arguments
      * @return FontawesomeIconHelper|Object
+     * @throws \yii\base\InvalidConfigException
      */
     public static function __callStatic($name, $arguments)
     {
