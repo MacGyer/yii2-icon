@@ -19,10 +19,10 @@ Please check sources for examples and details.
 
 ```php
 // via named magical method
-<?= FontawesomeIconHelper::faUser()->regular()->size(8)->render(); ?>
+echo FontawesomeIconHelper::faUser()->regular()->size(8)->render();
 
 // via instance by icon name and additional config
-<?= FontawesomeIconHelper::getInstance('user', ['flipVertical' => true])->regular()->render(); ?>
+echo FontawesomeIconHelper::getInstance('user', ['flipVertical' => true])->regular()->render();
 ```
 
 ## Changelog
