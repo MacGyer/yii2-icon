@@ -21,6 +21,9 @@ To install the package add the following to the ```require``` section of your co
 Please check sources for examples and details. Usage documentation will be coming shortly.
 
 ## Changelog
+### 1.1.0 - 2018-12-05
+* updated to FA version 5.5.0
+
 ### 1.0.3 - 2018-05-14
 * updated to FA version 5.0.13
 
