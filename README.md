@@ -18,11 +18,21 @@ To install the package add the following to the ```require``` section of your co
 ```
 
 ## Usage
-Please check sources for examples and details. Usage documentation will be coming shortly.
+Please check sources for examples and details.
+
+```php
+// via named magical method
+<?= FontawesomeIconHelper::faUser()->regular()->size(8)->render(); ?>
+
+// via instance by icon name and additional config
+<?= FontawesomeIconHelper::getInstance('user', ['flipVertical' => true])->regular()->render(); ?>
+```
 
 ## Changelog
-### 1.1.0 - 2018-12-05
+### 2.0.0 - 2018-12-05
+* **Please note:** This release introduces breaking changes
 * updated to FA version 5.5.0
+* make use of FA NPM asset
 
 ### 1.0.3 - 2018-05-14
 * updated to FA version 5.0.13
