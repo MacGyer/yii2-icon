@@ -5,10 +5,7 @@
 The preferred way of installation is through Composer.
 If you don't have Composer you can get it here: https://getcomposer.org/
 
-You also should install the Composer Asset Plugin to handle NPM and Bower assets:
-```
-$ composer global require "fxp/composer-asset-plugin:~1.4"
-```
+You must be able to load NPM assets via Composer. This can either be achieved by the FXP composer asset plugin or by using [Asset Packagist](https://asset-packagist.org/).
 
 To install the package add the following to the ```require``` section of your composer.json:
 ```
