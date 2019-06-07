@@ -26,6 +26,9 @@ echo FontawesomeIconHelper::getInstance('user', ['flipVertical' => true])->regul
 ```
 
 ## Changelog
+### 2.2.0 - 2019-06-07
+* updated to FA version 5.9.0
+
 ### 2.1.0 - 2019-01-02
 * updated to FA version 5.6.3
 
