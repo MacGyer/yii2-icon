@@ -21,7 +21,7 @@ use yii\web\View;
  * FA5 icon can be rendered. Please note, that you need a valid FA 5 pro license and asset files (JS, CSS) to use all pro
  * features.
  *
- * Current FA 5 version reflected: 5.9.0
+ * Current FA 5 version reflected: 5.11.2
  *
  * @method static FontawesomeIconHelper fa500px()
  * @method static FontawesomeIconHelper faAccessibleIcon()
@@ -189,6 +189,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faBus()
  * @method static FontawesomeIconHelper faBusAlt()
  * @method static FontawesomeIconHelper faBusinessTime()
+ * @method static FontawesomeIconHelper faBuyNLarge()
  * @method static FontawesomeIconHelper faBuysellads()
  * @method static FontawesomeIconHelper faCalculator()
  * @method static FontawesomeIconHelper faCalendar()
@@ -323,6 +324,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faCookieBite()
  * @method static FontawesomeIconHelper faCopy()
  * @method static FontawesomeIconHelper faCopyright()
+ * @method static FontawesomeIconHelper faCottonBureau()
  * @method static FontawesomeIconHelper faCouch()
  * @method static FontawesomeIconHelper faCpanel()
  * @method static FontawesomeIconHelper faCreativeCommons()
@@ -640,6 +642,8 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faHanukiah()
  * @method static FontawesomeIconHelper faHardHat()
  * @method static FontawesomeIconHelper faHashtag()
+ * @method static FontawesomeIconHelper faHatCowboy()
+ * @method static FontawesomeIconHelper faHatCowboySide()
  * @method static FontawesomeIconHelper faHatWizard()
  * @method static FontawesomeIconHelper faHaykal()
  * @method static FontawesomeIconHelper faHdd()
@@ -800,6 +804,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faMask()
  * @method static FontawesomeIconHelper faMastodon()
  * @method static FontawesomeIconHelper faMaxcdn()
+ * @method static FontawesomeIconHelper faMdb()
  * @method static FontawesomeIconHelper faMedal()
  * @method static FontawesomeIconHelper faMedapps()
  * @method static FontawesomeIconHelper faMedium()
@@ -846,6 +851,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faMosque()
  * @method static FontawesomeIconHelper faMotorcycle()
  * @method static FontawesomeIconHelper faMountain()
+ * @method static FontawesomeIconHelper faMouse()
  * @method static FontawesomeIconHelper faMousePointer()
  * @method static FontawesomeIconHelper faMugHot()
  * @method static FontawesomeIconHelper faMusic()
@@ -873,6 +879,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faOpenid()
  * @method static FontawesomeIconHelper faOpera()
  * @method static FontawesomeIconHelper faOptinMonster()
+ * @method static FontawesomeIconHelper faOrcid()
  * @method static FontawesomeIconHelper faOsi()
  * @method static FontawesomeIconHelper faOtter()
  * @method static FontawesomeIconHelper faOutdent()
@@ -987,6 +994,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faReadme()
  * @method static FontawesomeIconHelper faRebel()
  * @method static FontawesomeIconHelper faReceipt()
+ * @method static FontawesomeIconHelper faRecordVinyl()
  * @method static FontawesomeIconHelper faRecycle()
  * @method static FontawesomeIconHelper faRedRiver()
  * @method static FontawesomeIconHelper faReddit()
@@ -1183,6 +1191,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faSurprise()
  * @method static FontawesomeIconHelper faSuse()
  * @method static FontawesomeIconHelper faSwatchbook()
+ * @method static FontawesomeIconHelper faSwift()
  * @method static FontawesomeIconHelper faSwimmer()
  * @method static FontawesomeIconHelper faSwimmingPool()
  * @method static FontawesomeIconHelper faSymfony()
@@ -1278,6 +1287,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faUber()
  * @method static FontawesomeIconHelper faUbuntu()
  * @method static FontawesomeIconHelper faUikit()
+ * @method static FontawesomeIconHelper faUmbraco()
  * @method static FontawesomeIconHelper faUmbrella()
  * @method static FontawesomeIconHelper faUmbrellaBeach()
  * @method static FontawesomeIconHelper faUnderline()
