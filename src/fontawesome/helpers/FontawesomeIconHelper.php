@@ -1,7 +1,7 @@
 <?php
 /**
  * @link https://github.com/MacGyer/yii2-icon
- * @copyright Copyright (c) 2017 ... MacGyer for pluspunkt coding
+ * @copyright Copyright (c) 2019 ... MacGyer for pluspunkt coding
  * @license https://github.com/MacGyer/yii2-icon/blob/master/LICENSE
  */
 
@@ -21,7 +21,7 @@ use yii\web\View;
  * FA5 icon can be rendered. Please note, that you need a valid FA 5 pro license and asset files (JS, CSS) to use all pro
  * features.
  *
- * Current FA 5 version reflected: 5.11.2
+ * Current FA 5 version reflected: 5.12.0
  *
  * @method static FontawesomeIconHelper fa500px()
  * @method static FontawesomeIconHelper faAccessibleIcon()
@@ -107,6 +107,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faBackspace()
  * @method static FontawesomeIconHelper faBackward()
  * @method static FontawesomeIconHelper faBacon()
+ * @method static FontawesomeIconHelper faBahai()
  * @method static FontawesomeIconHelper faBalanceScale()
  * @method static FontawesomeIconHelper faBalanceScaleLeft()
  * @method static FontawesomeIconHelper faBalanceScaleRight()
@@ -212,6 +213,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faCarBattery()
  * @method static FontawesomeIconHelper faCarCrash()
  * @method static FontawesomeIconHelper faCarSide()
+ * @method static FontawesomeIconHelper faCaravan()
  * @method static FontawesomeIconHelper faCaretDown()
  * @method static FontawesomeIconHelper faCaretLeft()
  * @method static FontawesomeIconHelper faCaretRight()
@@ -315,6 +317,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faCompactDisc()
  * @method static FontawesomeIconHelper faCompass()
  * @method static FontawesomeIconHelper faCompress()
+ * @method static FontawesomeIconHelper faCompressAlt()
  * @method static FontawesomeIconHelper faCompressArrowsAlt()
  * @method static FontawesomeIconHelper faConciergeBell()
  * @method static FontawesomeIconHelper faConfluence()
@@ -448,6 +451,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faExclamationCircle()
  * @method static FontawesomeIconHelper faExclamationTriangle()
  * @method static FontawesomeIconHelper faExpand()
+ * @method static FontawesomeIconHelper faExpandAlt()
  * @method static FontawesomeIconHelper faExpandArrowsAlt()
  * @method static FontawesomeIconHelper faExpeditedssl()
  * @method static FontawesomeIconHelper faExternalLinkAlt()
@@ -503,6 +507,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faFireAlt()
  * @method static FontawesomeIconHelper faFireExtinguisher()
  * @method static FontawesomeIconHelper faFirefox()
+ * @method static FontawesomeIconHelper faFirefoxBrowser()
  * @method static FontawesomeIconHelper faFirstAid()
  * @method static FontawesomeIconHelper faFirstOrder()
  * @method static FontawesomeIconHelper faFirstOrderAlt()
@@ -645,7 +650,6 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faHatCowboy()
  * @method static FontawesomeIconHelper faHatCowboySide()
  * @method static FontawesomeIconHelper faHatWizard()
- * @method static FontawesomeIconHelper faHaykal()
  * @method static FontawesomeIconHelper faHdd()
  * @method static FontawesomeIconHelper faHeading()
  * @method static FontawesomeIconHelper faHeadphones()
@@ -691,6 +695,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faIdBadge()
  * @method static FontawesomeIconHelper faIdCard()
  * @method static FontawesomeIconHelper faIdCardAlt()
+ * @method static FontawesomeIconHelper faIdeal()
  * @method static FontawesomeIconHelper faIgloo()
  * @method static FontawesomeIconHelper faImage()
  * @method static FontawesomeIconHelper faImages()
@@ -821,6 +826,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faMenorah()
  * @method static FontawesomeIconHelper faMercury()
  * @method static FontawesomeIconHelper faMeteor()
+ * @method static FontawesomeIconHelper faMicroblog()
  * @method static FontawesomeIconHelper faMicrochip()
  * @method static FontawesomeIconHelper faMicrophone()
  * @method static FontawesomeIconHelper faMicrophoneAlt()
@@ -934,6 +940,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faPiedPiperAlt()
  * @method static FontawesomeIconHelper faPiedPiperHat()
  * @method static FontawesomeIconHelper faPiedPiperPp()
+ * @method static FontawesomeIconHelper faPiedPiperSquare()
  * @method static FontawesomeIconHelper faPiggyBank()
  * @method static FontawesomeIconHelper faPills()
  * @method static FontawesomeIconHelper faPinterest()
@@ -1258,6 +1265,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faTradeFederation()
  * @method static FontawesomeIconHelper faTrademark()
  * @method static FontawesomeIconHelper faTrafficLight()
+ * @method static FontawesomeIconHelper faTrailer()
  * @method static FontawesomeIconHelper faTrain()
  * @method static FontawesomeIconHelper faTram()
  * @method static FontawesomeIconHelper faTransgender()
@@ -1294,6 +1302,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faUndo()
  * @method static FontawesomeIconHelper faUndoAlt()
  * @method static FontawesomeIconHelper faUniregistry()
+ * @method static FontawesomeIconHelper faUnity()
  * @method static FontawesomeIconHelper faUniversalAccess()
  * @method static FontawesomeIconHelper faUniversity()
  * @method static FontawesomeIconHelper faUnlink()
@@ -1416,7 +1425,7 @@ use yii\web\View;
  * @method static FontawesomeIconHelper faYoutube()
  * @method static FontawesomeIconHelper faYoutubeSquare()
  * @method static FontawesomeIconHelper faZhihu()
- *
+ * 
  * @author Christoph Erdmann
  * @package helpers
  */
