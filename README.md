@@ -1,5 +1,7 @@
 # Icon widgets and helper classes for Yii2
 
+## This project has been discontinued.
+
 ## Installation
 
 The preferred way of installation is through Composer.
